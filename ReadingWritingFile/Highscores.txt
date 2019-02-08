@@ -1,0 +1,2 @@
+Mouse: 14s
+Lion: 6s
