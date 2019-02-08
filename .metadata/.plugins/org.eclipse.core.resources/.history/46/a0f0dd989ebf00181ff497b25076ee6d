@@ -1,0 +1,64 @@
+import java.util.Scanner;
+import java.util.Scanner.*;
+
+public class fileOut {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
+		String name;
+		String streetName;
+		int age = 0;
+		
+		IO.createOutputFile("file03.txt");
+		// Asking and storing informations
+
+		System.out.println("Enter your name, street name and age :");
+
+		name = keyboard.nextLine();
+		streetName = keyboard.nextLine();
+		age = keyboard.nextInt();
+		
+		String [] names = new String [3];
+		String [] streets = new String [3];
+		String[] ages = new String [3];
+		
+		
+		String [] people = {name, streetName,Integer.toString(age)};
+		
+		for (int i = 0; i<3; i++) {			
+			names[i] = keyboard.nextLine();
+			streets[i] = keyboard.nextLine();
+			ages[i] = keyboard.nextLine();
+			
+			IO.println(names[i]);
+			//IO.println(people[i]);
+		}
+		
+		IO.closeOutputFile();
+		
+
+		IO.openInputFile("file03.txt");
+		String lines = IO.readLine();
+		int numLines = 0;
+		
+		while (lines != null) {
+			System.out.println(lines);
+			numLines ++;
+			lines = IO.readLine();
+		}
+		
+		IO.closeInputFile();
+		
+		
+		
+		
+		
+		
+		
+	}
+		
+
+}
+
+

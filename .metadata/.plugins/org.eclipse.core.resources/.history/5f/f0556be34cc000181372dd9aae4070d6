@@ -1,0 +1,48 @@
+import java.util.Scanner;
+import java.util.Scanner.*;
+
+public class fileOut {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
+		
+		IO.createOutputFile("file03.txt");
+		int numberOfPeople = 0;
+		for (int i = 0; i <3; i++){
+			
+		numberOfPeople ++;
+		String person;
+		person = keyboard.nextLine();
+		String [] people = person.split(" ");
+		
+		for(int j = 0; j < 3 ; j++) {
+		// Asking and storing informations
+		IO.println(people[i]);
+		
+		}
+	}
+		IO.closeOutputFile();
+
+		
+		
+
+		IO.openInputFile("file03.txt");
+		String lines = IO.readLine();
+		int numLines = 0;
+		while (lines != null) {
+			System.out.println(lines);
+			numLines ++;
+			lines = IO.readLine();
+		}
+		
+		IO.closeInputFile();
+		
+	
+		
+	}
+		
+
+}
+
+

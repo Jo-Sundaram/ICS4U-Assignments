@@ -1,0 +1,30 @@
+import java.util.Scanner.*;
+import java.util.Random;
+
+public class fileOUT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Create the file to which we are goign to write in
+		IO.createOutputFile("file02.txt");
+		
+		// This is the Random() method
+		Random  randomInt = new Random();
+		
+		// This will store the random integers we want
+		int newInt = 0;
+	
+		
+		for(int i = 0; i < 5; i++) {
+			newInt = randomInt.nextInt(10);	
+			IO.println(Integer.toString(newInt));
+			System.out.println(newInt);
+		}
+		
+		IO.closeOutputFile();
+		
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+import java.util.Scanner.*;
+import java.util.Random;
+
+public class fileOUT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		IO.createOutputFile("file02.txt");
+		Random  randomInt = new Random();
+		int newInt = 0;
+		String[] randInts = new String [newInt];
+	
+		
+		
+		
+		for(int i = 0; i < 5; i++) {
+			newInt = randomInt.nextInt(10);
+			randInts[i] = Integer.toString(newInt);
+		
+			IO.println(randInts[i]);
+		}
+		
+		IO.closeOutputFile();
+		
+		
+		
+		
+		
+	}
+
+}

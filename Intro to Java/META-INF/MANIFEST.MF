@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Intro_to_Java
+Bundle-SymbolicName: Intro_to_Java
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: Intro_to_Java
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
